@@ -27,12 +27,18 @@ Each chosen station is a possible hiding zone. The circle is 250 meters for smal
 ## Hiding period
 
 - A round starts with a countdown both teams can see. Small is 30 minutes, medium is 60, large is 180. Both teams get an alert when it ends.
+- Seeking starts the moment hiding ends. There is no Start seeking button. The seeker phone notifies them that it is their turn to move. Ask stays locked until then. The hider is alerted too.
 - The hider does not pick a station. When the countdown ends, the zone is the marked station nearest the hider. The center is the station.
 - Seekers can see every possible zone. They never see which one was chosen.
+- The in-game bar has two clocks. The left clock is the hiding countdown. The right clock is a seeking stopwatch. The stopwatch is not a countdown and not a time limit.
+- During hiding the countdown runs and the stopwatch stays grey at 0:00. After hiding, the stopwatch counts up and the hiding clock is grey at 0:00.
+- The stopwatch stops when the hider taps Found. That elapsed time is how long the seekers took.
 
 ## Questions
 
-One question at a time. Seekers ask. The hider sees the answer and a countdown, then sends it or holds it.
+One question at a time. Seekers ask. The hider sees the answer and a countdown, then sends it. There is no Hold button. Not sending is the hold. The map stays as it is until the hider taps Send. Ask stays locked until seeking starts.
+
+Questions open as one bottom sheet over the map, about half height, with the map still visible. It opens on category icons. Tapping a category replaces the sheet with that category's question list. A back chevron labeled Questions returns to the icons. The phone Back does the same. The app does not stack a second sheet. Drag the sheet down to see the map. In the first version only Radar is active. Matching, measuring, thermometer, and photos stay visible but inactive.
 
 The app calculates matching, measuring, thermometer, and radar from GPS. The hider cannot change those answers. GPS can be off by tens of meters, and how a close call is decided is still open. Photos are taken by the hider.
 
@@ -54,10 +60,10 @@ Cards are a physical deck. After an on-time answer, the app reminds the hider ho
 
 ## The possible area
 
-- Only a sent answer changes the area where the hider can still be. Both phones show it. A held answer changes nothing.
+- Only a sent answer changes the area where the hider can still be. Both phones show it. A held answer changes nothing. There is no Hold button. Not sending is the hold. The map stays as it is until the hider taps Send.
 - Yes to "within this distance" keeps the inside of that circle. No greys out that circle. The play border still limits the map.
 - Places the hider cannot be are grey. The rest stays clear.
-- Live view shows sent answers. Plan view lets either team try a question and see yes and no before it is asked.
+- Live view shows sent answers. Plan view lets either team try a question and see yes and no before it is asked. Plan view stays out of the first version. The map still changes only after a sent answer.
 
 ## Photos and video
 
@@ -71,8 +77,8 @@ Cards are a physical deck. After an on-time answer, the app reminds the hider ho
 - Endgame starts when a seeker enters the hider's zone. The app does not guess whether the seeker is on transit.
 - Only the hider is told, with a notification and a marker that stays on their map.
 - Teams switch hiding for as many rounds as they want. The app keeps each team's longest hiding time and shows both. The longer time wins.
-- Game settings can end a round after a chosen time, end the whole game after a chosen time, or both. Either limit can be left off.
-- The hider can end a round early with Found.
+- Game settings can end a round after a chosen time, end the whole game after a chosen time, or both. Either limit can be left off. Those limits are separate from the seeking stopwatch.
+- The hider can end a round early with Found. That tap stops the seeking stopwatch. The elapsed time is how long the seekers took.
 - Standing near the hiders never ends a round.
 - Leaving the border warns and keeps tracking. The exact warning is still open.
 
